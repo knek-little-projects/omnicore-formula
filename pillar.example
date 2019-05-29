@@ -14,7 +14,7 @@ omnicore:
     - packets
     - pending
   paytxfee: '0.00001'
-  rpc_allow_ip: 10.0.0.0/9
+  rpc_allow_ip: 127.0.0.1
   deprecated_rpc: signrawtransaction
   rpcauths:
     - change_me:change_me
