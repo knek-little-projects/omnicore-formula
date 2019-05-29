@@ -1,0 +1,20 @@
+omnicore:
+  listen: 1
+  txindex: 1
+  disable_wallet: 1
+  max_connections: 125
+  rpcworkqueue: 200
+  db_cache: 4000
+  prune: 0
+  server: 1
+  datacarriersize: 80
+  logtimestamps: 1
+  omnidebugs:
+    - tally
+    - packets
+    - pending
+  paytxfee: '0.00001'
+  rpc_allow_ip: 10.0.0.0/9
+  deprecated_rpc: signrawtransaction
+  rpcauths:
+    - change_me:change_me

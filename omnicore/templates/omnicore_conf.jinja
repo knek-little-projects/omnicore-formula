@@ -1,0 +1,11 @@
+{%- set omnicore = pillar.get('omnicore', {}) -%}
+
+{%- for name, value in omnicore.items() %}
+  {%- if value is list %}
+    {%- for i in value %}
+{{ name }}={{ i }}
+    {%- endfor %}
+  {%- else %}
+{{ name }}={{ value }}
+  {%- endif %}
+{%- endfor %}
